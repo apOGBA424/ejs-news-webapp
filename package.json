@@ -1,0 +1,23 @@
+{
+  "name": "ejs-news-webapp",
+  "version": "1.0.0",
+  "description": "A news webapp made with nodejs and EJS templating engine.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ejs",
+    "nodejs",
+    "webapp",
+    "news_app"
+  ],
+  "author": "PASCHAL OGBA",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  }
+}
