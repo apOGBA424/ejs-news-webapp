@@ -1,0 +1,68 @@
+
+
+ul li .news-card{
+    /* outline: var(--outline-purple); */
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--purewhite-color);
+    padding: 2px  2px 18px;
+    margin-bottom: 0.2em;
+    border-radius: 4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-card:last-child{
+    margin-bottom: 5rem;
+}
+
+.news-card .image-wrapper{
+    width: 100%;
+    position: relative; /*-----------added this line now------------*/
+}
+.news-card .image-wrapper img{
+    background-color: var(--dark-color);
+    opacity: 0.95;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.news-card .card-body{
+    /* outline: var(--outline-purple); */
+    padding: 5%;
+    position: relative;
+}
+
+
+.news-card .card-body h2{
+    /* outline: var(--outline-blue); */
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+.news-card .card-body p{
+    /* outline: var(--outline-blue); */
+    text-overflow: ellipsis;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.card-body .readmore-cta{
+    /* outline: var(--outline-red); */
+    position: absolute;
+    bottom: -5px;
+    right: 34px;
+
+    font-weight: 200;
+    cursor: pointer;
+    letter-spacing: 1;
+    color: var(--blue-color);
+    font-size: .8rem;
+}

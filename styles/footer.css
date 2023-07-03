@@ -1,0 +1,39 @@
+/* -------footer-------- */
+footer{
+    /* border-top: 1px solid var(--dark4-color); */
+    bottom: 0;
+    background-color: var(--milk-color);
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid var(--purewhite-color);
+}
+
+footer h2{
+    /* outline: var(--outline-purple); */
+    text-align: end;
+    padding-top: 16%;
+}
+
+footer #copyright {
+    /* outline: var(--outline-blue); */
+    grid-column: 3/5;
+    word-spacing: 1.4px;
+    padding: 3rem 0;
+
+}
+
+footer #imprint{
+    grid-row: 2/2;
+    grid-column: 1/6;
+    background-color: var(--mainblack);
+}
+footer #imprint p{
+    text-align: center;
+    color: var(--purewhite-color);
+    font-weight: 100;
+    padding: 1.5rem 0;
+}
+footer #imprint p span{
+    color: #3882BE;
+}

@@ -1,0 +1,8 @@
+
+/* cards-list section */
+main ul  li{
+    padding: 0;
+    background-color:var(--tint-white);
+  }
+ 
+ 
