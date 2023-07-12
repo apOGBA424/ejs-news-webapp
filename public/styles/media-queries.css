@@ -4,9 +4,10 @@
 
 
 /* for mobile screens only */
+/* (min-width : 700px)  */
 @media (max-width : 599px), 
-(min-width : 599px),
-(min-width : 700px) {
+(min-width : 599px)
+{
 
     /* remove desktop menu-links */
     nav .menu-links li{
@@ -27,6 +28,67 @@
         font-weight: 400;
     }
 
+
+    /* for small screen details page */
+    .details-page-main{
+     margin: 0 !important;
+     padding: 0 !important;
+    }
+
+    .details-page-main .blogImage-wrapper{
+        /* outline: 2px dashed crimson; */
+        width: 100vw;
+        /* height: 80vw; */
+    }
+
+    .blogImage-wrapper img{
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .details-page-main .blogdetails-wrapper{
+        display: block;
+        padding: 0 8px;
+    }
+
+
+    /* details page text styling */  
+    /* .details-page-text h1, */
+    /* .details-page-text a, */
+    /* .details-page-text span, */
+    /* .details-page-text small  */
+
+    .details-page-text h1,
+    .details-page-text i{
+        font-weight: 300;
+    }
+
+    .details-page-text p{
+     color: default !important;
+     font-size: 1.2rem;
+     font-weight: 200;
+    }
+
+    .details-page--footer{
+        display: block;
+    }
+
+    .details-page--footer h2,
+    .details-page--footer p{
+        display: block;
+        margin: 0 auto!important;
+        padding: 1rem 0 !important;
+        text-align: center;
+    }
+    /* .details-page--footer h2,
+    .details-page--footer p{
+        outline: 2px dashed crimson;
+    } */
+    .details-page--footer #imprint{
+        padding: 2rem 0 1rem;
+        margin-bottom: 0 !important;
+    }
 }
 
 
@@ -78,6 +140,25 @@
         font-size: .8rem;
     }
 
+
+
+    /* for details page only (700+ px)*/
+    .details-page-main{
+        /* display: none; */
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .details-page-main .blogImage-wrapper,
+    .blogdetails-wrapper{
+        width: 60vw;
+        grid-column: 2/5;
+    }
+    .blogImage-wrapper img{
+        width: 100%;
+    }
+    .details-page-main i{
+        font-weight: 600;
+    }
 }
 
 
@@ -169,5 +250,22 @@
         letter-spacing: 1;
         color: var(--blue-color);
         font-size: .8rem;
+    }
+
+    
+
+    /* for Desktop details page only (1000+ px)*/
+    .details-page-main{
+        /* display: none; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .details-page-main .blogImage-wrapper,
+    .blogdetails-wrapper{
+        width: 45vw;
+        grid-column: 2/4;
+    }
+    .blogImage-wrapper img{
+        width: 100%;
     }
 }
