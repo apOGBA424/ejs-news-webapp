@@ -1,3 +1,8 @@
 .env
 node_modules
 package-lock.json
+
+
+test.ejs
+test2.ejs
+test.css
