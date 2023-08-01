@@ -28,71 +28,22 @@ let imgList = [
     {id : '60','img_url':'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=890&q=80'}
 ]
 
+// route data object
+let route_data;
 
 
 // routes
 app.get('/', (req, res)=>{
-    console.log('from console----> home route');
-    return res.render('index.ejs');
-});
-app.get('/details/', (req, res)=>{
-    console.log('from console----> details page route');
-    return res.render('details-page.ejs');
+    route_data = {page_name : 'Home'};
+    console.log(`from console----> ${route_data['page_name']} route`);
+    return res.render('index.ejs', {route_data});
 });
 
-
-
-/*------------------ALL THE Test-Routes GOES HERE---------------------*/
-// CREATE
-app.get('/testcreatenews', async(req, res)=>{
-    console.log('from console----> createNews page route');
-        return res.render('testcreatenews.ejs');
+app.get('/details', (req, res)=>{
+    route_data = {page_name : 'Details'};
+    console.log(`from console----> ${route_data['page_name']} route`);
+    return res.render('detailspage.ejs', {route_data});
 });
-
-
-// READ
-app.get('/testnews', async(req, res)=>{
-    try {
-        const all_news = await getNews_fromAPI();
-        
-        console.log('from console----> testnews page route');
-        return res.render('testnews.ejs', {all_news, imgList});
-
-    } catch (error) {
-        console.log(`from all_news : error---> ${error}`);
-        return res.status(500).json({error: 'internal server error'})
-    }
-});
-
-app.get('/testdetails/:id', async(req, res)=>{
-    console.log('from console----> details page route');
-
-    try {
-        const all_news = await getNews_fromAPI();
-
-        let newsId= req.params.id;
-
-        return res.render('testdetails.ejs', {all_news, newsId, imgList});
-    } catch (error) {
-        console.log(`from all_news : error---> ${error}`);
-        return res.status(500).json({error: 'internal server error'})
-    }
-});
-
-
-// UPDATE
-// app.post('/updateTestNews', upload.single("img"),async function updateTestNews
-app.get('/testupdatenews', async(req, res)=>{
-    console.log('from console----> updateNews page route');
-        return res.render('testupdatenews.ejs');
-});
-
-// dasboard--and--DELETE route
-app.get('/testdashboard', async(req, res)=>{
-    console.log('from console----> dashboard page route');
-        return res.render('testdashboard.ejs');
-});
-/*------------------ END OF TEST-ROUTES--------------------------*/
 
 
 app.use((req, res)=>{
@@ -100,6 +51,6 @@ app.use((req, res)=>{
 })
 
 app.listen(port, ()=>{
-    console.log(`app runnning on http://localhost:${port}/testnews`);
-    // console.log(`app runnning on http://localhost:${port}`);
+    // console.log(`app runnning on http://localhost:${port}/testnews`);
+    console.log(`app runnning on http://localhost:${port}`);
 });

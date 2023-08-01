@@ -1,6 +1,6 @@
-/* -------footer-------- */
+
+
 footer{
-    /* border-top: 1px solid var(--dark4-color); */
     bottom: 0;
     background-color: var(--milk-color);
     margin-top: 2rem;
@@ -10,13 +10,11 @@ footer{
 }
 
 footer h2{
-    /* outline: var(--outline-purple); */
     text-align: end;
     padding-top: 16%;
 }
 
 footer #copyright {
-    /* outline: var(--outline-blue); */
     grid-column: 3/5;
     word-spacing: 1.4px;
     padding: 3rem 0;
@@ -36,4 +34,12 @@ footer #imprint p{
 }
 footer #imprint p span{
     color: #3882BE;
+} 
+
+
+@media(min-width: 501px){
+    footer{
+        /* background-color: red; */
+        width: 100%;
+    }
 }

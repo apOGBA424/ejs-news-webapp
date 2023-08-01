@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewsApp | Details pages</title>
+    <title>NewsApp | <%= route_data['page_name'] %> page</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -11,10 +11,10 @@
 
     <!-- nav-bar section -->
     <nav class="details-page-text">
-        <h1 class="logo"><a href="./index">NewsApp</a></h1>
+        <h1 class="logo"><a href="/">NewsApp</a></h1>
         <div class="nav-links">
-            <ul class="menu-links">
-                <li><a href="./index" class="menu-link">Home</a></li>
+            <ul class="menu-links hide-on-mobile">
+                <li><a href="/" class="menu-link">Home</a></li>
                 <li><a href="" class="menu-link">Search</a></li>
                 <li><a href="" class="menu-link">Profile</a></li>
             </ul>
@@ -64,14 +64,14 @@
             </article>
 
             <div class="previous-page">
-                <a href="./">&larr; Previous</a>
+                <a href="/">&larr; Previous</a>
             </div>
 
         </div>
     </main>
 
     <footer class="details-page--footer">
-        <h2 class="logo"><a href="./">NewsApp</a></h2>
+        <h2 class="logo"><a href="/">NewsApp</a></h2>
 
         
         <p id="copyright">&copy;2023 Copyright NewsApp</p>

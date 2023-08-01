@@ -1,5 +1,10 @@
 
 /* cards-list section */
+/* main ul{
+  display: none;
+} */
+
+
 main ul  li{
     padding: 0;
     background-color:var(--tint-white);
