@@ -17,6 +17,7 @@
   "author": "PASCHAL OGBA",
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^5.0.0",
     "cookie-parser": "^1.4.6",
@@ -31,6 +32,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^7.3.2",
     "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.6.12",
     "socket.io": "^4.7.1"
   }
 }

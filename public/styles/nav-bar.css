@@ -2,6 +2,7 @@
 
 /* nav-bar */
 nav{
+    /* display: none; */
     /* outline: var(--outline-red); */
     width: 100vw;
     padding: 0.8% 10%;
@@ -17,6 +18,10 @@ nav{
 nav .logo{
     /* outline: var(--outline-red); */
     outline: transparent;
+}
+
+nav .nav-links{
+    display: none;
 }
 
 /* the nav-menu--and--menu-icon */

@@ -1,0 +1,21 @@
+@import url('./style.css');
+@import url('./nav-bar.css');
+@import url('./media-queries.css');
+@import url('./footer.css');
+
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.h1-404{
+    /* outline: var(--outline-blue); */
+    font-size: 10rem;
+    margin-top: 4rem;
+}
+
+.p-404{
+    /* outline: var(--outline-red); */
+    font-size: 3rem;
+}

@@ -2,8 +2,12 @@
 @import url(./cards-list.css);
 @import url(./news-card.css);
 @import url(./media-queries.css);
-@import url(./footer.css);
 @import url(./blogpage.css);
+@import url(./404.css);
+@import url(./testdashboard.css);
+@import url(./testcreatenews.css);
+@import url(./testupdatenews.css);
+@import url(./footer.css);
 
 
 
@@ -34,6 +38,9 @@
     --outline-yellow: 1px dashed var(--yellow-color);
     --outline-blue: 1px dashed var(--blue-color);
     --outline-purple: 1px dashed var(--purple-color);
+
+    --close-icon: &#10005;
+    --send-icon: &#10148;
 }
 
 
@@ -56,7 +63,7 @@ h1, h2, h3, h4, a, p, small, ul li{
     color: var(--dark-color);
     text-decoration: none;
     list-style-type: none;
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 
 /* main section */
@@ -78,4 +85,9 @@ nav .nav-links{
 }
 
 
-
+section #api-src{
+    color: var(--blue-color);
+}
+section #api-src:hover{
+    text-decoration: underline;
+}
