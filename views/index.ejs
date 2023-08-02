@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./styles/style.css">
-    <title>News App | Home</title>
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+    <title>News App | <%= route_data['page_name'] %> page</title>
 </head>
 <body>
     <!-- nav-bar section -->
     <nav>
-        <h1 class="logo"><a href="./index">NewsApp</a></h1>
+        <h1 class="logo"><a href="/">NewsApp</a></h1>
         <div class="nav-links">
             <ul class="menu-links">
-                <li><a href="./index" class="menu-link">Home</a></li>
+                <li><a href="/" class="menu-link">Home</a></li>
                 <li><a href="" class="menu-link">Search</a></li>
                 <li><a href="" class="menu-link">Profile</a></li>
             </ul>
-            <div class="nav-icon">&#9776;</div>
+            <div class="nav-icon">
+                <a href="#">&#9776;</a>
+            </div>
             <div class="navicon-list-wrapper">
                     <ul class="nav-icon_menuList">
-                        <li class="hello"><a href="./test">Home</a></li>
+                        <li class="hello"><a href="/">Home</a></li>
                         <li><a href="">Search</a></li>
                         <li><a href="">Profile</a></li>
                     </ul>
@@ -32,132 +35,85 @@
         <!-- main section -->
         <main>
             <ul>
-
                 <!-- cards-list section -->
                 <li>
+                    <div class="wrapper-for-newscards">
+                        <!-- news-card section -->
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
 
-                    <!-- news-card section -->
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="news-card">
+                            <a href="/details">
+                                <div class="image-wrapper">
+                                    <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
+                                </div>
+                                <div class="card-body">
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
+                                    <a href=""><p class="readmore-cta">Read More</p></a>
+                                </div>
+                            </a> 
+                        </div>
                     </div>
-
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="news-card">
-                        <a href="./details">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/3498323/pexels-photo-3498323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="blog-image">
-                            </div>
-                            <div class="card-body">
-                                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit tenetur ipsum nam tempore commodi necessitatibus, voluptatum reiciendis fuga repudiandae quod?</p>
-                                <a href=""><p class="readmore-cta">Read More</p></a>
-                            </div>
-                        </a> 
-                    </div>
+                        
                     
                 </li>
             </ul>
@@ -166,7 +122,7 @@
 
 
     <footer>
-        <h2 class="logo"><a href="./">NewsApp</a></h2>
+        <h2 class="logo"><a href="/">NewsApp</a></h2>
 
         
         <p id="copyright">&copy; 2023 Copyright NewsApp</p>

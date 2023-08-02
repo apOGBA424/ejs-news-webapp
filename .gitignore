@@ -3,6 +3,18 @@ node_modules
 package-lock.json
 
 
+test.js
 test.ejs
+testdetails.ejs
+testdetailspage.css
+testnews.ejs
+testdashboard.ejs
+testdashboard.css
+testcreatenews.ejs
+testcreatenews.css
+testupdatenews.ejs
+testupdatenews.css
 test2.ejs
+test-image.ejs
+test-image.css
 test.css
