@@ -13,9 +13,9 @@ ul li .news-card{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.news-card:last-child{
+/* .news-card:last-child{
     margin-bottom: 5rem;
-}
+} */
 
 .news-card .image-wrapper{
     width: 100%;

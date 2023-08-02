@@ -6,8 +6,66 @@
 
 
 main ul  li{
-    padding: 0;
-    background-color:var(--tint-white);
+  display: block;
+    padding: 8px auto;
+    overflow-x: hidden;
   }
  
- 
+
+
+  /* *****MEDIA-QUERIES*** */
+@media (min-width: 625px){
+    main{
+      display: grid;
+      place-items: center;
+      background-color: blues;
+    }
+
+    main ul li{
+      display: block;
+      padding: 0.4em 0 5rem;
+      justify-content: space-evenly;
+      margin: 0 8px;
+      overflow-x: hidden;
+      height: 80vh;
+    }
+    main ul li div{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 auto;
+      align-items: center;
+      overflow-x: hidden;
+
+      & .news-card{
+        width: 200px !important;
+        min-width: 180px;
+        /* background-color: green; */
+        font-size: 0.6rem; 
+        margin-bottom: 1rem;
+        margin-right: 2px;
+        padding-bottom: 0;
+
+       & .news-card a .image-wrapper .blog-image{
+        display: block;
+        width: 100%;
+       } 
+
+        & .card-body{
+          /* outline: var(--outline-purple); */
+          position: relative;
+          }
+      }
+    }
+
+    @media (min-width: 840px){
+      .news-card{
+        width: 100px;
+        height: 320px;
+      }
+
+      main ul li{
+        height: 65vh;
+      }
+    }
+
+}
